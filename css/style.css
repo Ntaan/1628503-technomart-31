@@ -17,6 +17,60 @@
     --light-grey: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EAEAEA;
 
 }
+@font-face {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-style: normal;
+  src:  local("cuprum");
+        url("cuprum.woff2") format("woff2"),
+        url("cuprum.woff") format("woff"),
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-style: italic;
+  src:  local("cuprumitalic");
+        url("cuprumitalic.woff2") format("woff2"),
+        url("cuprumitalic.woff") format("woff"),
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-weight: 700;
+  font-style: normal;
+  src:  local("cuprumbold");
+        url("cuprumbold.woff2") format("woff2"),
+        url("cuprumbold.woff") format("woff"),
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-weight: 700;
+  font-style: italic;
+  src:  local("cuprumbolditalic");
+        url("cuprumbolditalic.woff2") format("woff2"),
+        url("cuprumbolditalic.woff") format("woff"),
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src:  local("ptsans");
+        url("ptsans.woff2") format("woff2"),
+        url("ptsans.woff") format("woff"),
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src:  local("ptsansbold");
+        url("ptsansbold.woff2") format("woff2"),
+        url("ptsansbold.woff") format("woff"),
+}
+
 
 .page-body {
   min-width: 940px;
@@ -30,9 +84,7 @@
   background-color: var(--white);
 }
 
-.wrapper {
-  width: 940px;
-}
+
 
 .main-header {
   background-color: var(--basic-background);
@@ -54,12 +106,12 @@
 
 .main-header-logo {
   background: var(--basic-red);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .main-header-logo:active {
   background: #BA2732;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
 input::-webkit-input-placeholder {
@@ -101,6 +153,9 @@ input:focus {
 
 .main-header-text {
   color: var(--basic-red);
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
 }
 
 .main-menu-adress {
@@ -115,7 +170,7 @@ input:focus {
   border: 3px solid var(--white);
   text-decoration: none;
   padding: 13px 39px;
-  background: url(img/icons/icon-phone.svg) no-repeat 15px 50%;
+  background: url("img/icons/icon-phone.svg") no-repeat 15px 50%;
 }
 
 .login li{
@@ -146,12 +201,12 @@ input:focus {
 
 .main-nav {
   background-color: #32425C;
-  box-shadow: inset 0px -5px 0px #293449;
+  box-shadow: inset 0 -5px 0 #293449;
 }
 
 .main-nav:hover {
   background: #293449;
-  box-shadow: inset 0px -5px 0px #293449;
+  box-shadow: inset 0 -5px 0 #293449;
 }
 
 .main-nav:active {
@@ -186,7 +241,7 @@ input:focus {
 .promo a {
   color: var(--white);
   font-size: 14px;
-  line-height: 24px;
+  line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.3);
@@ -236,6 +291,9 @@ input:focus {
   color: var(--white);
   background: var(--basic-red);
   text-transform: uppercase;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .goods-header h2,
@@ -277,15 +335,40 @@ input:focus {
   background: var(--basic-red);
 }
 
+.goods-item-buy .btn-buy {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+  background: var(--basic-green);
+  box-shadow: inset 0 -3px 0 #367315;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.goods-item-buy .btn-bookmark {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425C;
+  background: #D8D8D8;
+  border: 3px solid var(--basic-green);
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
 .producers-header {
   background-color: #F9F5F0;
 }
 
 .producers-header a {
+  font-family: "Cuprum", Arial, sans-serif;
   text-decoration: none;
   color: var(--white);
   background-color: var(--basic-red);
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .producers-list {
@@ -320,19 +403,18 @@ input:focus {
   line-height: 30px;
   color: var(--white);
   background: #32425C;
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: 0  1px 0 #293449, inset 0 1px 0  #405069;
 }
 
 .services-list a:hover {
   background: #293449;
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
 }
 
-.services-list .active-service {
+.services-list a:active {
   color: #32425C;
   background: #FFFFFF;
-  box-shadow: 0px 1px 0px #FFFFFF, inset 0px 1px 0px #FFFFFF;
-
+  box-shadow: 0  1px 0 #FFFFFF, inset 0 1px 0 #FFFFFF;
 }
 
 
@@ -369,6 +451,9 @@ input:focus {
 
 .about .btn,
 .contacts .btn {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
   text-decoration: none;
   color: var(--white);
   background: var(--basic-red);
