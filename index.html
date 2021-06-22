@@ -19,6 +19,7 @@
 <body class="page-body">
 
   <header class="main-header">
+    <div class="main-header-bar">
     <div class="wrapper">
       <ul class="sub-menu">
         <li>
@@ -37,21 +38,29 @@
         <li class="order"><a href="blank.html">Оформить заказ</a></li>
       </ul>
     </div>
+  </div>
 
 
    <div class="wrapper">
-      <p class="main-header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+     <ul class="main-header-center">
+      <li class="main-header-text"><p>Интернет-магазин
+        строительных материалов и инструментов для
+        ремонта</p>
+      </li>
 
-      <div class="main-menu-adress">
+      <li class="main-menu-adress">
         <a class="main-header-tel" href="tel:+78005558628">+7 800 555-86-28</a>
         <p>
           г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
         </p>
-      </div>
-      <ul class="login">
+      </li>
+      <li>
+        <ul class="login">
         <li class="enter"><a href="blank.html">Вход</a></li>
         <li class="registration"><a href="blank.html">Регистрация</a></li>
-      </ul>
+        </ul>
+      </li>
+    </ul>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -93,18 +102,16 @@
             <a class="btn" href="blank.html">Бесплатно</a>
           </li>
           <li>
-            <div class="slider-arrows-container">
-              <button type="button slider-arrows-back">Назад</button>
-              <button type="button slider-arrows-next">Вперед</button>
-              <div class="promo-slider">
+            <div class="promo-sliders">
+
+              <div class="promo-slider perforator">
                 <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
                 <a class="btn" href="catalog.html">Открыть каталог</a>
               </div>
-              <div class="promo-slider">
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
-                <a class="btn" href="catalog.html">Открыть каталог</a>
+              <div class="slider-arrows-container">
+                <button type="button slider-arrows-back">Назад</button>
+                <button type="button slider-arrows-next">Вперед</button>
               </div>
               <div class="slider-buttons-container">
                 <ul>
@@ -112,12 +119,23 @@
                   <li></li>
                 </ul>
               </div>
-            </div>
+             </div>
+            <!-- <div class="promo-slider drill">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <a class="btn" href="catalog.html">Открыть каталог</a>
+            </div> -->
+
+
+
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
+    <div class="wrapper">
       <section class="goods">
+
         <header class="goods-header">
           <h2>Популярные товары</h2>
           <a class="btn" href="blank.html">Все популярные товары</a>
@@ -172,9 +190,13 @@
             </div>
           </li>
         </ul>
-      </section>
 
-      <section class="producers">
+    </section>
+  </div>
+
+  <div class="wrapper">
+    <section class="producers">
+
         <header class="producers-header">
           <h2>Популярные производители</h2>
           <a class="btn" href="blank.html">Все производители</a>
@@ -221,19 +243,22 @@
             </a>
           </li>
         </ul>
-      </section>
-    </div>
+
+    </section>
+  </div>
+
 
     <div class="wrapper">
       <section class="services">
         <h2>Сервисы</h2>
         <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами!
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="services-list">
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Кредит</a></li>
-        </ul>
+        <div class="services-sliders">
+          <ul class="services-list">
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Гарантия</a></li>
+            <li><a href="">Кредит</a></li>
+          </ul>
 
         <div class="services-slider">
           <div class="services-slider-delivery">
@@ -242,9 +267,9 @@
               к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,
               поднимая его на ваш этаж!</p>
-          </div>
+          </div></div>
 
-          <div class="services-slider-guarantee">
+          <!-- <div class="services-slider-guarantee">
             <h3>Гарантия</h3>
             <p class="services-slider-text">Если купленный у нас товар поломается или заискрит,
               а также в случае пожара, спровоцированного его возгоранием,
@@ -255,12 +280,12 @@
           <div class="services-slider-credit">
             <h3>Кредит</h3>
             <p class="services-slider-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-          </div>
+          </div> -->
         </div>
       </section>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper about-contacts">
       <section class="about">
         <h2>Компания "Техномарт"</h2>
         <p class="about-text">
@@ -294,14 +319,16 @@
     <div class="wrapper">
       <section class="main-footer-adress">
         <h2>Как нас найти</h2>
+        <div class="main-footer-text">
         <a class="main-footer-logo">
           <img src="img/logo_footer.svg" width="220" height="68" alt="Logo Technomart">
         </a>
         <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
           <a class="main-footer-tel" href="tel:+78005558628"> + 7 800 555-86-28</a>
-        </p>
+        </p></div>
 
-        <ul class="main-footer-menu">
+        <div class="main-footer-menus">
+          <ul class="main-footer-menu">
           <li><a href="blank.html">Компания</a></li>
           <li><a href="blank.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -313,7 +340,7 @@
           <li><a href="blank.html">Техника</a></li>
           <li><a href="blank.html">Инструменты</a></li>
           <li><a href="blank.html">Спецпредложения</a></li>
-        </ul>
+        </ul></div>
       </section>
     </div>
 
