@@ -322,18 +322,11 @@ input:focus {
 .promo {
   margin-bottom: 70px;
 
-  outline: 5px solid rgba(255, 0, 119, 0.3);
+  outline: 5px solid rgba(11, 243, 80, 0.3);
   outline-offset: -5px;
 }
 
-.promo-sliders {
-  outline: 5px solid rgba(0, 89, 255, 0.3);
-  outline-offset: -5px;
 
-  width: 620px;
-  background-color: #BA2732;
-  background-image: url("img/perforator.jpg");
-}
 
 .promo h2 {
   display: none;
@@ -383,14 +376,7 @@ input:focus {
   order: 1;
 }
 
-.promo-slider {
-  width: 620px;
-  height: 266px;
-}
 
- .drill {
-  visibility: hidden;
-}
 
 .promo-item h3 {
   font-weight: bold;
@@ -415,16 +401,61 @@ input:focus {
   background-color: rgba(169, 169, 169, 0.3);
 }
 
-.promo-slider h3{
+.promo-slider-list {
+  outline: 5px solid rgba(0, 89, 255, 0.3);
+  outline-offset: -5px;
+
+  list-style: none;
+  margin: 0;
+  padding:0;
+
+  width: 620px;
+  height: 266px;
+  background-color: #BA2732;
+  position: relative;
+}
+
+ .promo-slider-item {
+  display: none;
+}
+
+.promo-slider-item:first-child {
+  display: block;
+}
+
+.promo-slider-item h3{
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
+  position: absolute;
+  top: -5px;
+  left: 23px;
 }
 
-.promo-slider p {
+.promo-slider-item p {
   font-size: 18px;
   line-height: 24px;
+  position: absolute;
+  top: 50px;
+  left: 23px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 300;
+  z-index: 20;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .promo-slider .btn {
