@@ -481,10 +481,32 @@ input:focus {
   background: var(--basic-background);
   font-weight: 400;
   text-transform: uppercase;
+  grid-column: 1 / -1;
+  padding: 30px;
+
+  outline: 5px solid rgba(243, 239, 6, 0.76);
+  outline-offset: -5px;
 }
+
+.page-catalog {
+  outline: 5px solid rgba(9, 189, 63, 0.76);
+  outline-offset: -5px;
+
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-content: start;
+  gap: 20px;
+
+}
+
+
 
 .breadcrumbs {
   list-style: none;
+  grid-column: 1 / -1;
+
+  outline: 5px solid rgba(189, 9, 114, 0.76);
+  outline-offset: -5px;
 }
 
 .breadcrumbs a {
@@ -494,6 +516,13 @@ input:focus {
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.filters {
+
+  outline: 5px solid rgba(12, 9, 189, 0.76);
+  outline-offset: -5px;
+
 }
 
 .filters h2{
@@ -594,6 +623,11 @@ input:focus {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+}
+
+.catalog {
+  outline: 5px solid rgba(9, 223, 238, 0.76);
+  outline-offset: -5px;
 }
 
 .catalog h2 {
@@ -858,6 +892,7 @@ input:focus {
 
 .about-goods {
   background-color: var(--basic-background);
+  grid-column: 1 / -1;
 }
 
 .about-goods h2 {
