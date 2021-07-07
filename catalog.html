@@ -86,7 +86,7 @@
             <li><a href="index.html"><img src="img/icons/icon-home.svg" alt="Главная страница"></a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="blank.html">Инструменты</a></li>
-            <li><a href="blank.html">Перфораторы</a></li>
+            <li class="breadcrumbs-current"><a href="blank.html">Перфораторы</a></li>
         </ul>
 
         <h1 class="page-header">Перфораторы</h1>
@@ -94,43 +94,52 @@
         <section class="filters">
             <h2>Фильтр:</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                  <legend>Цена:</legend>
-                  <div class="range-filter">
-                    <div class="range-controls">
-                      <div class="scale">
-                        <input type="range" id="price" name="price" min="0" max="30000"><br>
-                      </div>
-                        <div class="toggle min-toggle"></div>
-                        <div class="toggle max-toggle"></div>
+
+              <fieldset class="filter-item">
+                <legend>Цена:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
                     </div>
-                    <div class="price-controls">
-                      <input class="min-price" type="text" value="0"> –
-                      <input class="max-price" type="text" value="30 000">
-                    </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
                   </div>
-                </fieldset>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      – <input type="number" name="max-price" value="30000">
+                    </label>
+
+                  </div>
+
+                </div>
+
+              </fieldset>
+
                 <fieldset>
-                  <legend>Производители:</legend>
+                  <legend class="filter-item">Производители:</legend>
                   <ul>
                       <li class="filter-option filter-checkbox">
-                        <input class="filter-input-checkbox filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>
                         <label for="filter-bosch">Bosch</label>
                       </li>
                       <li class="filter-option filter-checkbox">
-                        <input class="filter-input-checkbox filter-input" type="checkbox" name="интерскол" id="filter-interskol">
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="интерскол" id="filter-interskol">
                         <label for="filter-interskol">Интерскол</label>
                       </li>
                       <li class="filter-option filter-checkbox">
-                        <input class="filter-input-checkbox filter-input" type="checkbox" name="makita" id="filter-makita" checked>
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="makita" id="filter-makita" checked>
                         <label for="filter-makita">Makita</label>
                       </li>
                       <li class="filter-option filter-checkbox">
-                        <input class="filter-input-checkbox filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
                         <label for="filter-dewalt">Dewalt</label>
                       </li>
                       <li class="filter-option filter-checkbox">
-                        <input class="filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
                         <label for="filter-hitachi">Hitachi</label>
                       </li>
                   </ul>
@@ -139,11 +148,11 @@
                     <legend>Питание:</legend>
                     <ul>
                         <li class="filter-option filter-radio">
-                            <input class="filter-input-radio filter-input" type="radio" name="power-group" value="battery " id="power-battery" checked>
+                            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-group" value="battery " id="power-battery" checked>
                             <label for="power-battery">Аккумуляторные</label>
                           </li>
                           <li class="filter-option filter-radio">
-                            <input class="filter-input-radio filter-input" type="radio" name="power-group" value="network" id="power-network">
+                            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-group" value="network" id="power-network">
                             <label for="power-network">Сетевые</label>
                           </li>
                     </ul>
@@ -163,8 +172,8 @@
                 <li><a href="black.html">По функционалу</a></li>
               </ul>
               <ul class="sorting-arrows">
-                  <li><a href="black.html">Вверх</a></li>
-                  <li><a href="black.html">Вниз</a></li>
+                  <li class="arrow-up"><a href="black.html" class="visually-hidden">Вверх</a></li>
+                  <li class="arrow-down"><a href="black.html" class="visually-hidden">Вниз</a></li>
               </ul>
           </section>
 
