@@ -403,34 +403,36 @@
 
   </footer>
 
-  <section class="modal-feedback">
+  <section class="modal modal-feedback">
     <h2 class="visually-hidden">Обратная связь</h2>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
     <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <p >
-        <label for="login-name">Ваше имя</label>
+      <p class="modal-feedback-form-item">
+        <label for="login-name">Ваше имя:</label>
         <input class="feedback-login" id="login-name" type="text" name="login" placeholder="Имя Фамилия">
       </p>
-      <p >
-        <label for="login-mail">Ваш e-mail</label>
-        <input class="feedback-mail" id="login-mail" type="text" name="mail" placeholder="email@example.com">
+      <p class="modal-feedback-form-item">
+        <label for="login-mail">Ваш e-mail:</label>
+        <input class="feedback-mail" id="login-mail" type="email" name="mail" placeholder="email@example.com">
       </p>
-      <p >
+      <p>
         <label for="login-text">Текст письма:</label>
         <textarea class="feedback-text" id="login-text" name="login-text">В свободной форме</textarea>
       </p>
-
-      <button class="btn" type="submit">Отправить</button>
     </form>
+      <div class="modal-button">
+        <button class="feedback-button" type="submit">Отправить</button>
+      </div>
+
 
   </section>
 
-  <section class="modal-map">
+  <section class="modal modal-map">
     <h2 class="visually-hidden">Карта</h2>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7987.2303140990425!2d30.307530286981493!3d59.968515288075494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631508a3f8361%3A0x8945bc7da5ae11c9!2z0YAuINCa0LDRgNC_0L7QstC60LA!5e0!3m2!1sru!2spl!4v1621787923047!5m2!1sru!2spl"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      width="943" height="499" style="border:0;" allowfullscreen="" title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
   </section>
 
 

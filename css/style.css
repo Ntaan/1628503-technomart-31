@@ -76,6 +76,11 @@
 }
 
 .page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
   min-width: 940px;
   margin: 0;
   padding: 0;
@@ -120,7 +125,7 @@
   padding-bottom: 60px;
 }
 
- .inner-page .main-header {
+.inner-page .main-header {
   padding-bottom: 21px;
 }
 
@@ -128,13 +133,11 @@
   height: 42px;
   margin-bottom: 40px;
   background: #293449;
-
 }
 
 .main-header-bar-content {
   display: grid;
   grid-template-columns: 220px 1fr 450px;
-
 }
 
 .main-header-logo {
@@ -160,7 +163,6 @@
   align-items: center;
   justify-content: flex-start;
   margin-left: 42px;
-  border: none;
 
 }
 
@@ -177,12 +179,29 @@
   opacity: 0.3;
 }
 
+.search {
+  border: none;
+  outline: none;
+}
+
 .search::-webkit-input-placeholder {
   background-color: #293449;
   color: var(--white);
   border: none;
   outline: none;
+
 }
+
+input:-moz-placeholder {
+  background-color: #293449;
+  color: var(--white);
+}
+
+input:-ms-input-placeholder {
+  background-color: #293449;
+  color: var(--white);
+}
+
 
 input:focus {
   background: var(--white);
@@ -327,7 +346,7 @@ input:focus {
   content: "";
   position: absolute;
   left: 50px;
-  top: 5px;
+  top: 8px;
   width: 18px;
   height: 19px;
   background-image: url("../img/icons/icon-phone.svg");
@@ -1813,10 +1832,104 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: var(--basic-red);
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: var(--black);
+  background-color: var(--white);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-top: 7px solid var(--basic-red);
+
+}
+
+.modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+  height: 112px;
+  background-color: #f1f1f1;
+}
+
+.feedback-button {
+  width: 460px;
+  height: 38px;
+  border: none;
+  background-color: var(--basic-red);
+  color: var(--white);
+}
+
+.modal-feedback {
+  display: none;
+  top: 120px;
+  bottom: auto;
+  width: 560px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 11px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  background-image: url("../img/icons/red-cross.svg");
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+}
+
 .modal-feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   color: var(--black);
   font-size: 18px;
   line-height: 24px;
+  width: 460px;
+  margin: 0 auto;
+  margin-top: 46px;
+}
+
+.modal-feedback-form p {
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.modal-feedback-form-item {
+  width: 220px;
+  margin-top: 0;
+}
+
+.modal-feedback-form input {
+  width: 220px;
+  margin-top: 11px;
+  padding: 7px 12px;
+}
+
+
+.feedback-text {
+  width: 460px;
+  border: 2px solid #C5C5C5;
+  box-sizing: border-box;
+  border-radius: 2px;
+  margin-top: 11px;
+  padding: 7px 12px;
+}
+
+.modal-feedback-form input[type="text"],
+.modal-feedback-form input[type="email"] {
+  border: 2px solid #C5C5C5;
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
 .feedback-login,
@@ -1827,25 +1940,71 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #A9A9A9;
 }
 
+.modal-map {
+  display: none;
+  width: 943px;
+  height: 499px;
+
+}
+
+.modal-map img {
+    display: block;
+}
+
+.modal-map iframe {
+  border: none;
+}
+
+.modal-basket {
+  display: none;
+  top: 120px;
+  bottom: auto;
+  width: 560px;
+}
+
 .modal-basket-text {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
+  text-align: center;
   color: var(--black);
   font-weight: 700;
+  height: 170px;
+  padding-top: 73px;
+  margin: 0;
+
+}
+
+.modal-basket-text::before {
+  content: "";
+  position: absolute;
+  left: 45px;
+  top: 45px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icons/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .modal-basket a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
+  width: 192px;
+  height: 38px;
 }
 
 .modal-basket-buy {
   color: var(--white);
   background-color: var(--basic-red);
+  margin-right: 10px;
 }
 
 .modal-basket-continue {
