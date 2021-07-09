@@ -27,6 +27,7 @@
           </a>
 
           <form class="main-header-search" method="get" action="https://echo.htmlacademy.ru">
+            <button class="search-button" aria-label="Искать"></button>
             <input class="search" type="search" placeholder="Поиск:" name="site-search">
           </form>
 
@@ -54,7 +55,7 @@
         <li>
           <div class="login">
             <a class="enter" href="blank.html">Вход</a>
-            <a class="registration"href="blank.html">Регистрация</a>
+            <a class="registration" href="blank.html">Регистрация</a>
           </div>
         </li>
       </ul>
@@ -79,6 +80,9 @@
         <h2 class="visually-hidden">Промо</h2>
         <ul class="promo-list">
           <li class="promo-item material">
+            <div class="new">
+              <p>New</p>
+            </div>
             <h3>Материалы</h3>
             <a class="btn" href="blank.html">На любой вкус</a>
           </li>
@@ -101,12 +105,15 @@
           <li class="promo-item-slider">
             <ul class="promo-slider-list">
               <li class="promo-slider-item">
+                <div class="black-bar"></div>
                 <img src="img/perforator.jpg" width="620" height="266">
                 <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
                 <a class="btn" href="catalog.html">Открыть каталог</a>
               </li>
+
               <li class="promo-slider-item">
+                <div class="black-bar"></div>
                 <img src="img/drill.jpg" width="620" height="266">
                 <h3>Дрели</h3>
                 <p>Соседям на радость!</p>
@@ -116,8 +123,9 @@
 
               <div class="slider-controls">
                 <button type="button" aria-label="Первый слайд"></button>
-                <button type="button" aria-label="Второй слайд"></button>
+                <button class="current" type="button" aria-label="Второй слайд"></button>
               </div>
+
               <div class="slider-arrows-container">
                 <div class="slider-arrows-left"></div>
                 <div class="slider-arrows-right"></div>
@@ -138,6 +146,7 @@
 
         <ul class="goods-list">
           <li class="goods-item">
+
             <div class="goods-item-image">
               <img src="img/goods/BOSCH_9000.jpg" width="184" height="164" alt="">
             </div>
@@ -153,6 +162,9 @@
           </li>
 
           <li class="goods-item">
+            <div class="new-catalog">
+              <p>New</p>
+            </div>
             <div class="goods-item-image">
               <img src="img/goods/BOSCH_3000.jpg" width="127" height="112" alt="">
             </div>
@@ -183,6 +195,9 @@
           </li>
 
           <li class="goods-item">
+            <div class="new-catalog">
+              <p>New</p>
+            </div>
             <div class="goods-item-image">
               <img src="img/goods/BOSCH_2000.jpg" width="127" height="112" alt="">
             </div>

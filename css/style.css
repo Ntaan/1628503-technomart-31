@@ -117,7 +117,6 @@
 }
 
 .main-header {
-  margin-bottom: 60px;
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
@@ -125,9 +124,6 @@
   padding-bottom: 60px;
 }
 
-.inner-page .main-header {
-  padding-bottom: 21px;
-}
 
 .main-header-bar {
   height: 42px;
@@ -160,32 +156,45 @@
 .main-header-search {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 42px;
-
 }
 
-.main-header-search::before {
-  content: "";
+.search-button {
   position: absolute;
-  left: -25px;
+  left: 17px;
   top: 13px;
   width: 17px;
   height: 17px;
+  background-color: transparent;
   background-image: url("../img/icons/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  border: 0;
   opacity: 0.3;
+}
+
+.search-button:hover {
+  opacity: 1;
+}
+
+.search-button:focus {
+  background-image: url("../img/icons/icon-search-red.svg");
+  z-index: 3;
 }
 
 .search {
   border: none;
   outline: none;
+  padding-left: 46px;
+  background-color:  #293449;
+  width: 100%;
+  height: 42px;
+}
+
+.search:focus {
+  background-color: var(--white);
 }
 
 .search::-webkit-input-placeholder {
-  background-color: #293449;
   color: var(--white);
   border: none;
   outline: none;
@@ -193,19 +202,11 @@
 }
 
 input:-moz-placeholder {
-  background-color: #293449;
   color: var(--white);
 }
 
 input:-ms-input-placeholder {
-  background-color: #293449;
   color: var(--white);
-}
-
-
-input:focus {
-  background: var(--white);
-  color: var(--black);
 }
 
 .sub-menu {
@@ -251,7 +252,6 @@ input:focus {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
-
 }
 
 .bookmark:active {
@@ -269,7 +269,6 @@ input:focus {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
-
 }
 
 .inner-page .basket {
@@ -299,7 +298,6 @@ input:focus {
 
 .order {
   background-color: var(--basic-green);
-
 }
 
 .order:hover {
@@ -330,8 +328,6 @@ input:focus {
   padding: 0 30px;
 }
 
-
-
 .main-menu-adress {
   position: relative;
   color: #32425C;
@@ -352,7 +348,6 @@ input:focus {
   background-image: url("../img/icons/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
 .main-header-tel {
@@ -370,7 +365,6 @@ input:focus {
   position: relative;
   display: flex;
   justify-content: flex-end;
-
 }
 
 .login a {
@@ -384,7 +378,9 @@ input:focus {
 }
 
 .enter,
-.registration {
+.registration,
+.client-name,
+.exit {
   background: var(--white);
 }
 
@@ -407,12 +403,10 @@ input:focus {
 
 .enter:hover::before {
   background-image: url("../img/icons/icon-login-hover.svg");
-
 }
 
 .enter:active::before {
   background-image: url("../img/icons/icon-login.svg");
-
 }
 
 .registration {
@@ -430,6 +424,36 @@ input:focus {
 .registration:active {
   color: #C5C5C5;
 }
+
+.client-name {
+  padding-left: 56px;
+  width: 254px;
+  height: 45px;
+}
+
+
+.client-name::before {
+  content: " ";
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/icons/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.exit {
+  width: 45px;
+  height: 45px;
+  background-image: url("../img/icons/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
 
 .main-menu-client {
   display: flex;
@@ -514,7 +538,6 @@ input:focus {
   margin: 0;
   padding: 0;
   height: 60px;
-
 }
 
 .main-nav-list a {
@@ -537,6 +560,7 @@ input:focus {
 }
 
 .promo {
+  margin-top: 60px;
   margin-bottom: 70px;
 }
 
@@ -545,18 +569,62 @@ input:focus {
   color: var(--white);
   padding: 0;
   margin: 0;
-
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 123px 123px 123px;
   gap: 20px;
-
 }
 
 .promo-item {
+  position: relative;
   width: 300px;
   height: 123px;
   padding: 21px 22px;
+  overflow: hidden;
+}
+
+.new {
+  position: absolute;
+  top: 10px;
+  right: -35px;
+  font-family: "Cuprum", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  height: 30px;
+  transform: rotate(45deg);
+}
+
+.new-catalog {
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  font-family: "Cuprum", Arial, sans-serif;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 14px;
+  line-height: 18px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  height: 30px;
+  transform: rotate(45deg);
+}
+
+.promo-item p {
+  padding: 0 50px;
+}
+
+.goods-item p {
+  padding: 0 50px;
 }
 
 .material {
@@ -587,8 +655,6 @@ input:focus {
   background-image: url("../img/promo_icons/technics.svg");
   background-repeat: no-repeat;
   background-position: 190px 50%;
-
-
 }
 
 .sale {
@@ -660,6 +726,14 @@ input:focus {
   display: block;
 }
 
+.black-bar {
+  position: absolute;
+  width: 620px;
+  height: 104px;
+  background: rgba(0, 0, 0, 0.25);
+
+}
+
 .promo-slider-item h3{
   font-weight: bold;
   font-size: 36px;
@@ -682,7 +756,11 @@ input:focus {
   position: absolute;
   bottom: 36px;
   left: 310px;
-  z-index: 3;
+  z-index: 2;
+  display: flex;
+  width: 30px;
+  justify-content: space-between;
+
 }
 
 .slider-controls button {
@@ -693,6 +771,13 @@ input:focus {
   border: 1px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-controls .current {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ffffff;
+  background-color: var(--basic-red);
 }
 
 
@@ -777,6 +862,7 @@ input:focus {
   justify-content: flex-start;
   width: 460px;
   margin: 0;
+  margin-top: 21px;
   padding: 0;
   list-style: none;
   grid-column-start: 1;
@@ -1177,6 +1263,7 @@ input:focus {
   margin-bottom: 20px;
   border: 1px solid #EAEAEA;
 
+  overflow: hidden;
 }
 
 .goods-item:hover {
