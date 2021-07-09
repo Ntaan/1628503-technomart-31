@@ -731,7 +731,6 @@ input:-ms-input-placeholder {
   width: 620px;
   height: 104px;
   background: rgba(0, 0, 0, 0.25);
-
 }
 
 .promo-slider-item h3{
@@ -759,8 +758,7 @@ input:-ms-input-placeholder {
   z-index: 2;
   display: flex;
   width: 30px;
-  justify-content: space-between;
-
+  justify-content: space-between
 }
 
 .slider-controls button {
@@ -780,8 +778,6 @@ input:-ms-input-placeholder {
   background-color: var(--basic-red);
 }
 
-
-
 .promo-slider-item .btn {
   position: absolute;
   left: 24px;
@@ -798,7 +794,6 @@ input:-ms-input-placeholder {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--white);
-
 }
 
 .promo-slider-item .btn:hover {
@@ -828,7 +823,6 @@ input:-ms-input-placeholder {
   background-image: url("../img/icons/icon-left.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
 .slider-arrows-right {
@@ -842,20 +836,14 @@ input:-ms-input-placeholder {
   background-repeat: no-repeat;
   background-position: 0 0;
   transform: rotate(-180deg);
-
 }
-
-
 
 .page-catalog {
   display: grid;
   grid-template-columns: 220px 1fr;
   align-content: start;
   gap: 20px;
-
 }
-
-
 
 .breadcrumbs {
   display: flex;
@@ -867,7 +855,6 @@ input:-ms-input-placeholder {
   list-style: none;
   grid-column-start: 1;
   grid-column-end: -1;
-
 }
 
 .breadcrumbs li {
