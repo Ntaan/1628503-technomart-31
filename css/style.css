@@ -846,7 +846,7 @@ input:-ms-input-placeholder {
 
 .breadcrumbs li {
   position: relative;
-  margin-right: 40px;
+  margin-right: 41px;
 }
 
 .breadcrumbs li::after {
@@ -918,6 +918,15 @@ input:-ms-input-placeholder {
   margin-bottom: 17px;
   border: none;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.filter fieldset:nth-child(2) {
+  padding-bottom: 12px;
+}
+
+.filter fieldset:nth-child(3) {
+  border-bottom: none;
+  margin-bottom: 5px;
 }
 
 .filter legend {
@@ -1001,6 +1010,7 @@ input::-webkit-inner-spin-button {
 .price-controls {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 5px;
 }
 
 .price-controls label {
@@ -1043,6 +1053,15 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
   user-select: none;
   margin-top: 18px;
+}
+
+.filter-item:nth-child(3) .filter-option {
+  margin-top: 24px;
+}
+
+.filter-input-checkbox:disabled + label,
+.filter-input-radio:disabled + label {
+  opacity: 0.4;
 }
 
 .filter-input-checkbox + label::before {
@@ -1101,6 +1120,8 @@ input::-webkit-inner-spin-button {
   background-image: url("../img/icons/radio-on-hover.svg");
 }
 
+
+
 .filter-button {
   width: 220px;
   height: 38px;
@@ -1110,8 +1131,7 @@ input::-webkit-inner-spin-button {
   background-color: var(--white);
   text-transform: uppercase;
   border: 1px solid #E5E5E5;
-  margin-top: -15px;
-
+  margin-top: -25px;
 }
 
 .sorting-banner {
