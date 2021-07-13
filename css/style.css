@@ -17,6 +17,7 @@
   --light-grey: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
     #eaeaea;
 }
+
 @font-face {
   font-family: "Cuprum";
   font-weight: 400;
@@ -74,7 +75,6 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-
   min-width: 940px;
   margin: 0;
   padding: 0;
