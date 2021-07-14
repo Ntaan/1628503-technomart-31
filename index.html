@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="favicon/icon_152.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicon/icon_180.png">
+  <link rel="icon" href="favicon/icon-152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,7 +27,8 @@
           </a>
 
           <form class="main-header-search" method="get" action="https://echo.htmlacademy.ru">
-            <input class="search" type="search" placeholder="Поиск:" name="site-search">
+            <label class="visually-hidden" for="search">Поиск:</label>
+            <input class="search" type="search" id="search" placeholder="Поиск:" name="site-search">
             <button class="search-button" aria-label="Искать"></button>
           </form>
 
@@ -43,7 +44,7 @@
    <div class="wrapper">
       <ul class="main-header-center">
         <li class="main-header-text">
-          <p>Интернет-магазин<br> строительных материалов<br>
+          <p>Интернет-магазин строительных материалов &nbsp;
             и инструментов для ремонта</p>
         </li>
 
@@ -62,7 +63,7 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#">Главная</a></li>
+          <li><a>Главная</a></li>
           <li><a href="blank.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="blank.html">Новости</a></li>
@@ -101,9 +102,10 @@
           </li>
           <li class="promo-item-slider">
             <ul class="promo-slider-list">
+
               <li class="promo-slider-item">
                 <div class="black-bar"></div>
-                <img src="img/perforator.jpg" width="620" height="266" alt="">
+                <img src="img/perforator.jpg" width="620" height="266" alt="Мужчина работает перфоратором">
                 <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
                 <a class="btn" href="catalog.html">Открыть каталог</a>
@@ -111,7 +113,7 @@
 
               <li class="promo-slider-item">
                 <div class="black-bar"></div>
-                <img src="img/drill.jpg" width="620" height="266" alt="">
+                <img src="img/drill.jpg" width="620" height="266" alt="Мужчина сверлит дрелью стену ">
                 <h3>Дрели</h3>
                 <p>Соседям на радость!</p>
                 <a class="btn" href="catalog.html">Открыть каталог</a>
@@ -149,7 +151,7 @@
               <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
             </div>
             <div class="goods-item-thumbnail-wrapper">
-              <img src="img/goods/BOSCH_9000.jpg" width="184" height="164" alt="">
+              <img src="img/goods/BOSCH-9000.jpg" width="184" height="164" alt="">
             </div>
             <a class="goods-item-link" href="">
               <h3 class="goods-item-title">Перфоратор BOSCH BFG 9000</h3>
@@ -164,7 +166,7 @@
               <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
             </div>
             <div class="goods-item-thumbnail-wrapper">
-              <img src="img/goods/BOSCH_3000.jpg" width="127" height="112" alt="">
+              <img src="img/goods/BOSCH-3000.jpg" width="127" height="112" alt="Аппарат BOSCH 3000">
             </div>
             <a class="goods-item-link" href="">
               <h3 class="goods-item-title">Перфоратор BOSCH BFG 3000</h3>
@@ -179,7 +181,7 @@
               <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
             </div>
             <div class="goods-item-thumbnail-wrapper">
-              <img src="img/goods/BOSCH_6000.jpg" width="144" height="128" alt="">
+              <img src="img/goods/BOSCH-6000.jpg" width="144" height="128" alt="Аппарат BOSCH 6000">
             </div>
             <a class="goods-item-link" href="">
               <h3 class="goods-item-title">Перфоратор BOSCH BFG 6000</h3>
@@ -194,7 +196,7 @@
               <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
             </div>
             <div class="goods-item-thumbnail-wrapper">
-              <img src="img/goods/BOSCH_2000.jpg" width="127" height="112" alt="">
+              <img src="img/goods/BOSCH-2000.jpg" width="127" height="112" alt="Аппарат BOSCH 2000">
             </div>
             <a class="goods-item-link" href="">
               <h3 class="goods-item-title">Перфоратор BOSCH BFG 2000</h3>
@@ -218,42 +220,42 @@
         <ul class="producers-list">
           <li class="producers-item">
             <a href="blank.html">
-              <img src="img/producers_logo/bosch.png" width="126" height="37" alt="Лого Bosch">
+              <img src="img/producers-logo/bosch.png" width="126" height="37" alt="Лого Bosch">
             </a>
           </li>
           <li class="producers-item">
             <a href="blank.html">
-              <img src="img/producers_logo/makita.png" width="123" height="40" alt="Лого Makita">
+              <img src="img/producers-logo/makita.png" width="123" height="40" alt="Лого Makita">
             </a>
           </li>
           <li class="producers-item">
             <a href="blank.html">
-              <img src="img/producers_logo/dewalt.png" width="146" height="44" alt="Лого Dewalt">
+              <img src="img/producers-logo/dewalt.png" width="146" height="44" alt="Лого Dewalt">
             </a>
           </li>
           <li class="producers-item">
             <a href="blank.html">
-              <img src="img/producers_logo/interskol.png" width="200" height="76" alt="Лого Интерскол">
+              <img src="img/producers-logo/interskol.png" width="200" height="76" alt="Лого Интерскол">
             </a>
           </li>
           <li class="producers-item">
             <a href="blank.html">
-              <img src="img/producers_logo/hitachi.png" width="169" height="31" alt="Лого Hitachi">
+              <img src="img/producers-logo/hitachi.png" width="169" height="31" alt="Лого Hitachi">
             </a>
           </li>
           <li class="producers-item">
             <a href="blank.html">
-              <img src="img/producers_logo/lg.png" width="121" height="73" alt="Лого LG">
+              <img src="img/producers-logo/lg.png" width="121" height="73" alt="Лого LG">
             </a>
           </li>
           <li class="producers-item">
             <a href="blank.html">
-              <img src="img/producers_logo/aeg.png" width="151" height="98" alt="Лого AEG">
+              <img src="img/producers-logo/aeg.png" width="151" height="98" alt="Лого AEG">
             </a>
           </li>
           <li class="producers-item">
             <a href="blank.html">
-              <img src="img/producers_logo/metabo.png" width="204" height="69" alt="Лого Metabo">
+              <img src="img/producers-logo/metabo.png" width="204" height="69" alt="Лого Metabo">
             </a>
           </li>
         </ul>
@@ -306,7 +308,7 @@
           Огромный выбор товаров для ремонта и строительства
           не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 
-        <p class="about-text">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+        <p class="about-text">Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:</p>
 
         <ul class="about-list">
@@ -322,7 +324,8 @@
         <h2>Контакты</h2>
         <p class="contacts-text">Вы можете забрать товар сами,
           заехав в наш офис:</p>
-        <img class="contacts-map" src="img/map.png" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"><br>
+          <a href="https://goo.gl/maps/uts2uehhukh6mjfy9">
+        <img class="contacts-map" src="img/map.png" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"></a>
         <a class="btn contacts-button" href="blank.html">Заблудились? Напишите нам</a>
       </section>
     </div>
@@ -335,9 +338,9 @@
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="main-footer-text">
         <a class="main-footer-logo">
-          <img src="img/logo_footer.svg" width="220" height="68" alt="Logo Technomart">
+          <img src="img/logo-footer.svg" width="220" height="68" alt="Logo Technomart">
         </a>
-        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
           <a class="main-footer-tel" href="tel:+78005558628"> + 7 800 555-86-28</a>
         </p>
       </div>
@@ -443,8 +446,7 @@
     </div>
   </section>
 
-  <script src="js/map.js"></script>
-  <script src="js/basket.js"></script>
+  <script src="js/modal.min.js"></script>
 
 </body>
 

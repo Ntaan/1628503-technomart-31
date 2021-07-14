@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon/icon_152.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon/icon_180.png">
+    <link rel="icon" href="favicon/icon-152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/icon-180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,138 +17,108 @@
 
   <body class="page-body inner-page">
 
-     <header class="main-header">
-    <div class="main-header-bar">
-      <div class="wrapper">
-        <div class="main-header-bar-content">
-          <a  href="index.html" class="main-header-logo">
-            <img class="logo" width="108" height="18" src="img/logo-technomart.svg" alt="Logo Technomart">
-          </a>
+    <header class="main-header">
+      <div class="main-header-bar">
+        <div class="wrapper">
+          <div class="main-header-bar-content">
+            <a href="index.html" class="main-header-logo">
+              <img class="logo" width="108" height="18" src="img/logo-technomart.svg" alt="Logo Technomart">
+            </a>
 
-          <form class="main-header-search" method="get" action="https://echo.htmlacademy.ru">
-            <input class="search" type="search" placeholder="Поиск:" name="site-search">
-            <button class="search-button" aria-label="Искать"></button>
-          </form>
+            <form class="main-header-search" method="get" action="https://echo.htmlacademy.ru">
+              <label class="visually-hidden" for="search">Поиск:</label>
+              <input class="search" type="search" id="search" placeholder="Поиск:" name="site-search">
+              <button class="search-button" aria-label="Искать"></button>
+            </form>
 
-          <div class="sub-menu">
-            <a class="sub-menu-item bookmark" href="blank.html">Закладки: 0</a>
-            <a class="sub-menu-item basket" href="blank.html">Корзина: 0</a>
-            <a class="sub-menu-item order" href="blank.html">Оформить заказ</a>
+            <div class="sub-menu">
+              <a class="sub-menu-item bookmark" href="blank.html">Закладки: 0</a>
+              <a class="sub-menu-item basket" href="blank.html">Корзина: 0</a>
+              <a class="sub-menu-item order" href="blank.html">Оформить заказ</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-   <div class="wrapper">
-      <ul class="main-header-center">
-        <li class="main-header-text">
-          <p>Интернет-магазин строительных материалов
-            и инструментов для ремонта</p>
-        </li>
+     <div class="wrapper">
+        <ul class="main-header-center">
+          <li class="main-header-text">
+            <p>Интернет-магазин строительных материалов &nbsp;
+              и инструментов для ремонта</p>
+          </li>
 
-        <li class="main-menu-adress">
-          <a class="main-header-tel" href="tel:+78005558628">+7 800 555-86-28</a>
-          <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-        </li>
+          <li class="main-menu-adress">
+            <a class="main-header-tel" href="tel:+78005558628">+7 800 555-86-28</a>
+            <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+          </li>
 
-        <li>
-          <div class="login">
-            <a class="enter" href="blank.html">Вход</a>
-            <a class="registration" href="blank.html">Регистрация</a>
-          </div>
-        </li>
-      </ul>
-
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a href="#">Главная</a></li>
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="blank.html">Спецпредложения</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+          <li>
+            <div class="login">
+              <a class="enter" href="blank.html">Войти</a>
+              <a class="registration" href="blank.html">Регистрация</a>
+            </div>
+          </li>
         </ul>
-      </nav>
-    </div>
-  </header>
+
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="blank.html">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="blank.html">Новости</a></li>
+            <li><a href="blank.html">Спецпредложения</a></li>
+            <li><a href="blank.html">Доставка</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
   <main>
 
   </main>
 
-  <footer class="main-footer">
+  <section class="bottom-footer">
     <div class="wrapper">
-      <section class="main-footer-adress">
-        <h2 class="visually-hidden">Как нас найти</h2>
-        <div class="main-footer-text">
-        <a class="main-footer-logo">
-          <img src="img/logo_footer.svg" width="220" height="68" alt="Logo Technomart">
-        </a>
-        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
-          <a class="main-footer-tel" href="tel:+78005558628"> + 7 800 555-86-28</a>
-        </p>
+
+      <p class="copyright">© 2010–2021 Компания «Техномарт»<br>
+        Все права защищены</p>
+
+      <div class="socials">
+        <h2 class="visually-hidden">Давайте дружить!</h2>
+        <ul  class="socials-list">
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="27" height="16" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
+            </a></li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
+            </a>
+          </li>
+        </ul>
       </div>
 
-      <div class="main-footer-menus">
-          <ul class="main-footer-menu">
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-        <ul class="main-footer-submenu">
-          <li><a href="blank.html">Материалы</a></li>
-          <li><a href="blank.html">Техника</a></li>
-          <li><a href="blank.html">Инструменты</a></li>
-          <li><a href="blank.html">Спецпредложения</a></li>
-        </ul>
-      </div>
-      </section>
+      <p class="bottom-footer-feedback">Обратная связь:<br>
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
+
+      <p class="bottom-footer-developed">Разработано —<br>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      </p>
+
     </div>
+  </section>
 
-    <section class="bottom-footer">
-      <div class="wrapper">
-
-        <p class="copyright">© 2010–2021 Компания «Техномарт»<br>
-          Все права защищены</p>
-
-        <div class="socials">
-          <h2 class="visually-hidden">Давайте дружить!</h2>
-          <ul  class="socials-list">
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-                <svg width="27" height="16" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
-              </a></li>
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually-hidden">Фейсбук</span>
-                <svg width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually-hidden">Инстаграм</span>
-                <svg width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <p class="bottom-footer-feedback">Обратная связь:<br>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-
-        <p class="bottom-footer-developed">Разработано —<br>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </p>
-
-      </div>
-    </section>
-
-  </footer>
+</footer>
 
 
     </body>

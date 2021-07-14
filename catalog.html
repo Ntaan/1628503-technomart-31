@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="favicon/icon_152.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="favicon/icon_180.png">
+    <link rel="icon" href="favicon/icon-152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/icon-180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,7 +43,7 @@
     <div class="wrapper">
       <ul class="main-header-center">
         <li class="main-header-text">
-          <p>Интернет-магазин<br> строительных материалов<br>
+          <p>Интернет-магазин строительных материалов <br>
             и инструментов для ремонта</p>
         </li>
 
@@ -68,7 +68,7 @@
         <ul class="main-nav-list">
           <li><a href="index.html">Главная</a></li>
           <li><a href="blank.html">Компания</a></li>
-          <li class="main-nav-item">Каталог</li>
+          <li><a>Каталог</a></li>
           <li><a href="blank.html">Новости</a></li>
           <li><a href="blank.html">Спецпредложения</a></li>
           <li><a href="blank.html">Доставка</a></li>
@@ -78,13 +78,16 @@
     </div>
   </header>
 
-    <main class="page-catalog wrapper">
+    <main>
+
+      <div class="wrapper">
+        <div class="page-catalog">
 
         <ul class="breadcrumbs">
             <li><a href="index.html"><img src="img/icons/icon-home.svg" alt="Главная страница"></a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="blank.html">Инструмент</a></li>
-            <li class="breadcrumbs-current"><a href="blank.html">Перфораторы</a></li>
+            <li class="breadcrumbs-current"><a>Перфораторы</a></li>
         </ul>
 
         <h1 class="page-header">Перфораторы</h1>
@@ -105,12 +108,11 @@
                     <div class="toggle toggle-max" tabindex="0"></div>
                   </div>
                   <div class="price-controls">
-                    <label class="min-price">
-                      <input type="number" name="min-price" value="0">
-                    </label>  –
-                    <label class="max-price">
-                    <input type="number" name="max-price" value="30000">
-                    </label>
+                    <label class="visually-hidden" for="min-price">Минимальная цена</label>
+                      <input id="min-price" type="number" name="min-price" value="0">
+                      –
+                    <label class="visually-hidden" for="max-price">Максимальная цена</label>
+                    <input id="max-price" type="number" name="max-price" value="30000">
                   </div>
                 </div>
               </fieldset>
@@ -171,8 +173,8 @@
                 <li><a href="black.html">По функционалу</a></li>
               </ul>
               <ul class="sorting-arrows">
-                  <li class="arrow-up"><a href="black.html" class="visually-hidden">Вверх</a></li>
-                  <li class="arrow-down"><a href="black.html" class="visually-hidden">Вниз</a></li>
+                <li class="arrow-up"><a href="black.html" aria-label="Вверх"></a></li>
+                <li class="arrow-down"><a href="black.html" aria-label="Вниз"></a></li>
               </ul>
           </section>
 
@@ -186,7 +188,7 @@
                   <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="goods-item-thumbnail-wrapper">
-                  <img src="img/goods/BOSCH_6000.jpg" width="144" height="128" alt="">
+                  <img src="img/goods/BOSCH-6000.jpg" width="144" height="128" alt="Аппарат BOSCH 6000">
                 </div>
                 <a class="goods-item-link" href="">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 6000</h3>
@@ -201,7 +203,7 @@
                   <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="goods-item-thumbnail-wrapper">
-                  <img src="img/goods/BOSCH_6000.jpg" width="144" height="128" alt="">
+                  <img src="img/goods/BOSCH-6000.jpg" width="144" height="128" alt="">
                 </div>
                 <a class="goods-item-link" href="">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 6000</h3>
@@ -216,7 +218,7 @@
                   <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="goods-item-thumbnail-wrapper">
-                  <img src="img/goods/BOSCH_6000.jpg" width="144" height="128" alt="">
+                  <img src="img/goods/BOSCH-6000.jpg" width="144" height="128" alt="Аппарат BOSCH 6000">
                 </div>
                 <a class="goods-item-link" href="">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 6000</h3>
@@ -231,7 +233,7 @@
                   <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="goods-item-thumbnail-wrapper">
-                  <img src="img/goods/BOSCH_3000.jpg" width="127" height="112" alt="">
+                  <img src="img/goods/BOSCH-3000.jpg" width="127" height="112" alt="Аппарат BOSCH 3000">
                 </div>
                 <a class="goods-item-link" href="">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 3000</h3>
@@ -246,7 +248,7 @@
                   <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="goods-item-thumbnail-wrapper">
-                  <img src="img/goods/BOSCH_6000.jpg" width="144" height="128" alt="">
+                  <img src="img/goods/BOSCH-6000.jpg" width="144" height="128" alt="Аппарат BOSCH 6000">
                 </div>
                 <a class="goods-item-link" href="">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 6000</h3>
@@ -261,7 +263,7 @@
                   <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="goods-item-thumbnail-wrapper">
-                  <img src="img/goods/BOSCH_2000.jpg" width="127" height="112" alt="">
+                  <img src="img/goods/BOSCH-2000.jpg" width="127" height="112" alt="Аппарат BOSCH 2000">
                 </div>
                 <a class="goods-item-link" href="">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 2000</h3>
@@ -275,7 +277,7 @@
                   <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="goods-item-thumbnail-wrapper">
-                  <img src="img/goods/BOSCH_3000.jpg" width="127" height="112" alt="">
+                  <img src="img/goods/BOSCH-3000.jpg" width="127" height="112" alt="Аппарат BOSCH 3000">
                 </div>
                 <a class="goods-item-link" href="">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 3000</h3>
@@ -290,7 +292,7 @@
                   <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="goods-item-thumbnail-wrapper">
-                  <img src="img/goods/BOSCH_6000.jpg" width="144" height="128" alt="">
+                  <img src="img/goods/BOSCH-6000.jpg" width="144" height="128" alt="Аппарат BOSCH 6000">
                 </div>
                 <a class="goods-item-link" href="">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 6000</h3>
@@ -305,7 +307,7 @@
                   <a class="goods-item-button goods-item-button-bookmark" href="#">В закладки</a>
                 </div>
                 <div class="goods-item-thumbnail-wrapper">
-                  <img src="img/goods/BOSCH_2000.jpg" width="127" height="112" alt="">
+                  <img src="img/goods/BOSCH-2000.jpg" width="127" height="112" alt="Аппарат BOSCH 2000">
                 </div>
                 <a class="goods-item-link" href="">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 2000</h3>
@@ -330,19 +332,22 @@
             </ul>
 
         </section>
-      </main>
+        </div>
+      </div>
+
 
         <section class="about-goods">
           <div class="wrapper">
             <h2>Пара слов о перфораторах</h2>
               <p class="about-goods-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления
-                    и долбления отверстий в кирпиче, бетоне и камне.<br>
-              Существуют электромеханические и пневматические перфораторы. Современные модели
-                  могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
-              В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены
-                  отбойный молоток и ударная дрель.</p>
+                и долбления отверстий в кирпиче, бетоне и камне.</p>
+              <p class="about-goods-text">Существуют электромеханические и пневматические перфораторы. Современные модели
+                могут выполнять функции дрели, шуруповерта и отбойного молотка.</p>
+              <p class="about-goods-text">В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены
+                отбойный молоток и ударная дрель.</p>
           </div>
         </section>
+      </main>
 
     <footer class="main-footer">
       <div class="wrapper">
@@ -350,7 +355,7 @@
           <h2 class="visually-hidden">Как нас найти</h2>
           <div class="main-footer-text">
             <a class="main-footer-logo">
-              <img src="img/logo_footer.svg" width="220" height="68" alt="Logo Technomart">
+              <img src="img/logo-footer.svg" width="220" height="68" alt="Logo Technomart">
             </a>
             <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
               <a class="main-footer-tel" href="tel:+78005558628"> + 7 800 555-86-28</a>
@@ -428,7 +433,7 @@
     </div>
   </section>
 
-  <script src="js/basket.js"></script>
+  <script src="js/modal.js"></script>
 
   </body>
   </html>
