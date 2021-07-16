@@ -1,12 +1,15 @@
 const feedbackLink = document.querySelector(".contacts-button");
 const feedbackPopup = document.querySelector(".modal-feedback");
-const feedbackClose = feedbackPopup.querySelector(".modal-close");
+if(feedbackPopup)
+var feedbackClose = feedbackPopup.querySelector(".modal-close");
 
+if(feedbackLink && feedbackPopup)
 feedbackLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackPopup.classList.add("modal-show");
 });
 
+if(feedbackClose && feedbackPopup)
 feedbackClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackPopup.classList.remove("modal-show");
@@ -51,13 +54,16 @@ window.addEventListener("keydown", function (evt) {
 
 const mapLink = document.querySelector(".contacts-map");
 const mapPopup = document.querySelector(".modal-map");
-const mapClose = mapPopup.querySelector(".modal-close");
+if(mapPopup)
+var mapClose = mapPopup.querySelector(".modal-close");
 
+if(mapLink)
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.add("modal-show");
 });
 
+if(mapClose)
 mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove("modal-show");
