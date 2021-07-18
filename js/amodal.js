@@ -1,28 +1,32 @@
 const feedbackLink = document.querySelector(".contacts-button");
 const feedbackPopup = document.querySelector(".modal-feedback");
-const feedbackSubmit = feedbackPopup.querySelector('.feedback-button');
-const nameField = feedbackPopup.querySelector('#login-name');
-const emailField = feedbackPopup.querySelector('#login-mail');
+if(feedbackPopup) {
+	const feedbackSubmit = feedbackPopup.querySelector('.feedback-button');
 
-feedbackSubmit.addEventListener('click', function (evt) {
-  if(!nameField.value && !emailField.value) {
-    evt.preventDefault();
-    feedbackPopup.classList.remove('error');
-    setTimeout(function() {
-      feedbackPopup.classList.add('error');
-    }, 100);
-    return;
-  }
-});
+	const nameField = feedbackPopup.querySelector('#login-name');
+	const emailField = feedbackPopup.querySelector('#login-mail');
+
+	feedbackSubmit.addEventListener('click', function (evt) {
+	  if(!nameField.value && !emailField.value) {
+	    evt.preventDefault();
+	    feedbackPopup.classList.remove('error');
+	    setTimeout(function() {
+	      feedbackPopup.classList.add('error');
+	    }, 100);
+	    return;
+	  }
+	});
+}
 
 function fieldChange(field) {
   this.oninput = function () {
     feedbackPopup.classList.remove('error');
   }
 }
-
-fieldChange(nameField);
-fieldChange(emailField);
+if(feedbackPopup) {
+	fieldChange(nameField);
+	fieldChange(emailField);
+}
 
 if(feedbackPopup)
 var feedbackClose = feedbackPopup.querySelector(".modal-close");
