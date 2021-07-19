@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body class="page-body inner-page">
@@ -449,7 +449,32 @@
     </div>
   </section>
 
-  <script src="js/amodal.js"></script>
+  <section class="modal modal-feedback">
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="modal-feedback-form-item">
+        <label for="login-name">Ваше имя:</label>
+        <input class="feedback-login" id="login-name" type="text" name="login" placeholder="Имя Фамилия">
+      </p>
+      <p class="modal-feedback-form-item">
+        <label for="login-mail">Ваш e-mail:</label>
+        <input class="feedback-mail" id="login-mail" type="email" name="mail" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="login-text">Текст письма:</label>
+        <textarea class="feedback-text" id="login-text" rows="4" name="login-text" placeholder="В свободной форме"></textarea>
+      </p>
+
+      <div class="modal-button">
+        <button class="feedback-button" type="submit">Отправить</button>
+      </div>
+    </form>
+    <div class="modal-button-bottom"></div>
+
+  </section>
+
+  <script src="js/modal.min.js"></script>
 
   </body>
   </html>
